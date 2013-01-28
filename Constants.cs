@@ -7,7 +7,7 @@ namespace Library.Physics
 {
     public class World
     {
-        List<PhysicsController> Controllers { get; set; }
+        List<IPhysicsController> Controllers { get; set; }
     }
 
     public sealed class PConstants

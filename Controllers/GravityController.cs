@@ -1,12 +1,16 @@
 ﻿
 namespace Library.Physics.Controllers
 {
-    public abstract class PhysicsController
+    public interface IPhysicsController
     {
-        
+        Vector ModifyAcceleration(Vector acceleration);
     }
 
-    class GravityController : PhysicsController
+    public class GravityController : IPhysicsController
     {
+        public Vector ModifyAcceleration(Vector acceleration)
+        {
+            return new Vector(1, 0.9f) * acceleration;
+        }
     }
 }
