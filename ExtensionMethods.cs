@@ -9,6 +9,12 @@ namespace Library.Physics
 
     public static class Vector2ExtensionMethods
     {
+
+        public static Vector2 Flip(this Vector2 v)
+        {
+            return new Vector2(v.Y, v.X * -1);
+        }
+
         public static Vector2 Add(this Vector2 v1, Vector2 v2)
         {
             return Vector2.Add(v1, v2);
