@@ -70,6 +70,10 @@
     <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
       <Private>False</Private>
     </Reference>
+    <Reference Include="MiscUtil-r285">
+      <HintPath>..\libraries\MiscUtil\MiscUtil-r285.dll</HintPath>
+      <Aliases>MiscUtil</Aliases>
+    </Reference>
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
@@ -95,7 +99,6 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\GravityController.cs" />
-    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
